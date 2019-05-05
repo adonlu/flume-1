@@ -27,6 +27,7 @@ public enum EventSerializerType {
   TEXT(BodyTextEventSerializer.Builder.class),
   HEADER_AND_TEXT(HeaderAndBodyTextEventSerializer.Builder.class),
   AVRO_EVENT(FlumeEventAvroEventSerializer.Builder.class),
+  DELIMITED_TEXT(DelimitedTextEventSerializer.Builder.class),
   OTHER(null);
 
   private final Class<? extends EventSerializer.Builder> builderClass;
